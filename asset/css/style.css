@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+/* !setting */
+:root {
+    --color: #ffffff;
+}
+
+
+*{
+    text-decoration: none;
+    list-style: none;
+    font-family: "Prompt", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease-in-out 0.5s;
+}
+
+.container {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+ /* todoo || navbar || */
+
+.logo p {
+    font-size: 25px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    animation: light 5s linear 1s infinite alternate;
+}
+
+nav {
+    background: radial-gradient(circle, rgba(12,6,119,1) 0%, rgba(61,6,116,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.nav-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 5rem;
+    color: var(--color);
+}
+
+.nav-list ul , .nav-list a{
+    display: flex;
+    gap: 3rem;
+    color: var(--color);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    transition: ease-in-out 0.5s;
+}
+
+.nav-list a:hover {
+    transform: scale(1.1);
+    color: rgba(0,212,255,1);
+}
+
+/* button-contact */
+
+.button-contact a button{
+    color: #fff;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    padding: 7px 22px;
+
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%) ;
+    box-shadow: 0 0 15px 0 rgba(34,193,195,1) ;
+} 
+
+.button-contact a button:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+@keyframes light {
+    0% {
+        text-shadow: 2px 2px 20px rgb(255, 255, 255);
+        transform: scale(1.03);
+    }
+    25% {
+        text-shadow: 2px 2px 20px rgb(0, 0, 0);
+        transform: scale(1)
+    }
+    50% {
+        text-shadow: 2px 2px 20px rgb(255, 255, 255);
+        transform: scale(1.03)
+    }
+    100% {
+        text-shadow: 2px 2px 20px rgb(0, 0, 0);
+        transform: scale(1)
+    }
+}
+
+/* todoo || header || */
+
+.info-1-header {
+    width: 100%;
+    height: 55rem;
+    background: radial-gradient(circle, rgba(12,6,119,1) 0%, rgba(61,6,116,1) 100%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.text-detail #wel {
+    font-size: 3rem;
+    padding-top: 15%;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: var(--color);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+}
+
+.button-header button {
+    padding: 15px 20px;
+    background: none;
+    color: var(--color);
+    border: solid white 2px;
+    box-shadow: 0 0 8px 0 white;
+    font-family: "Orbitron", sans-serif;
+    transition: ease-in-out 0.5s;
+}
+
+.button-header button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+
+#name {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: var(--color);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    padding: 10px 0 ;
+}
+
+.line {
+    width: 60%;
+    height: 3px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+/* ring */
+
+.ring{
+    width: 200px;
+    height: 200px;
+    border: 6px solid white;
+    border-radius: 10000px;
+    position: absolute;
+    box-shadow: 0 0 15px 0 white;
+}
+
+@keyframes ring-a {
+    0% {
+        transform: translateX(10%);
+    }
+    50% {
+        transform: translateY(5%) scale(1.2);
+    }
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+@keyframes ring-b {
+    0% {
+        transform: translateX(30%);
+    }
+    50% {
+        transform: translateY(5%) ;
+    }
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+.r1 {
+    right: 20rem;   
+    animation: ring-a 5s linear 2s infinite alternate;
+}
+
+.r2 {
+    bottom: 10rem;
+    width: 300px;
+    height: 300px;
+    animation: ring-b 5s linear 2s infinite alternate;
+}
+
+.r3 {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 7rem;
+}
+
+/* todoo || skill || */
+.info-skill {
+    position: relative;
+    background-image: url(Bgskill.jpg);
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    background-size: 100%;
+    background-position: center;
+}
+
+.detail-skill {
+    display: flex;
+    justify-content: center;
+    /* margin: 4rem 0 8rem 0; */    
+}
+
+.box {
+    width: 300px;
+    height: 320px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.651);
+    transition: ease-in-out 0.5s;
+}
+
+.box-1{
+    animation: box-skill 10s linear 1s infinite alternate;
+}
+
+.box-3 {
+    animation: box-skill 14s linear 1s infinite alternate;
+}
+
+.box-2 {
+    animation: box-skill 8s linear 1s infinite alternate;
+}
+
+
+@keyframes box-skill {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10%) rotate(2deg) ;
+    }
+    100% {
+        transform: translateY(-5%) rotate(-2deg);
+    }
+}
+
+.box img {
+    width: 200px;
+    height: 200px;
+}
+
+#skill-font {
+    font-size: 20px;
+}
+
+.box-skill {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.text-header h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-shadow: 2px 2px 10px rgb(255, 255, 255) ;
+    color: white;
+    z-index: 2;
+}
+
+.box:hover {
+    box-shadow: 0 0 30px 0 rgba(61,6,116,1);
+    transform: scale(1.1) rotate(2deg);
+}
+
+.ring-skill {
+    border: 6px solid rgb(255, 255, 255) ;
+    border-radius: 10000px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 0 15px 0 white;
+    animation: ring-skill 2s linear 1s infinite alternate;
+}
+
+@keyframes ring-skill {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scaleX(1.02);
+    }
+    50% {
+        transform: scaleY(1.02);
+    }
+    75% {
+        transform: scaleX(1.02);
+    }
+    100% {
+        border-radius: 10000px 10000px 10000px 9000px
+    }
+}
+
+.ring-skill {
+    top: 25px;
+    right: 10rem;
+    width: 300px;
+    height: 300px;
+}
+
+.skill-2 {
+    left: 100px;
+    top: 15rem;
+}
+
+/* todoo || about me || */
+.about-me {
+    background: radial-gradient(circle, rgba(12,6,119,1) 0%, rgba(61,6,116,1) 100%, rgba(0,212,255,1) 100%);
+    color: var(--color);
+    height: 50rem;
+    display: flex;
+    align-items: center;
+}
+
+.aboutme-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.line-center-a {
+    width: 2px;
+    top: 7rem;
+    height: 30rem;
+    background-color: white;
+    left: 47%;
+    position: absolute;
+}
+
+.left-about {
+    margin-right: 10rem;
+}
+
+.text-detail-about {
+    width: 30rem;
+    position: relative;
+}
+
+.header-text-about span {
+    font-size: 40px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-shadow: 2px 2px 10px white;
+}
+
+.header-text-about #me {
+    animation: fontchangecolor 6s linear 1s infinite alternate;
+}
+
+@keyframes fontchangecolor {
+    0% {
+        color: aqua;
+        text-shadow: 2px 2px 10px aqua;
+    }
+    50% {
+        color: rgb(255, 251, 0);
+        text-shadow: 2px 2px 10px rgb(255, 251, 0);
+    }
+    100% {
+        color: rgb(255, 0, 0);
+        text-shadow: 2px 2px 10px rgb(255, 0, 0);
+    }
+}
+
+.detail-about span {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; 
+    font-size: 30px;
+    text-shadow: 2px 2px 10px white;
+}
+
+.line-about-head {
+    width: 60px ;
+    height: 7px;
+    background-color: white;
+}
+
+.line-about-x {
+    width: 16rem ;
+    height: 2px;
+    background-color: white;
+    box-shadow: 0 0 15px 0 white;
+}
+
+.line-about-y {
+    width: 2px;
+    height: 2.5rem;
+    background-color: white;
+    position: absolute;
+    right: 14rem;
+    box-shadow: 0 0 15px 0 white;
+}
+
+.button-about {
+    margin-top: 3rem;
+}
+
+.button-about button {
+    padding: 10px 30px;
+    border: solid 2px white;
+    background: none;
+    color: var(--color);
+    box-shadow: 0 0 10px 0 white;
+    transition: ease-in-out 0.5s;
+}
+
+.button-about button:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* todoo || Education || */
+
+.info-edu {
+    padding: 6rem 0;
+    background-image: url(Bgedu.jpg);
+    background-position: center;
+    background-size: 100%;
+    color: white;
+}
+
+.edu-detail {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative
+}
+
+.text-edu-1 {
+    padding: 15px 0;
+}
+
+.edu-text {
+    width: 65%;
+    height: 100%;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.line-edu {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 25rem;
+    border-radius: 1000px;
+    animation: changcolorline 10s linear infinite alternate;
+    box-shadow: 0 0 15px 0 rgba(63,6,119,1);
+}
+
+@keyframes changcolorline {
+    0% {
+        background: radial-gradient(circle, rgba(12,6,119,1) 0%, rgba(61,6,116,1) 100%, rgba(0,212,255,1) 100%);
+    }
+    50% {
+        background: radial-gradient(circle, rgba(6,84,119,1) 0%, rgba(61,6,116,1) 100%, rgba(0,212,255,1) 100%);
+    }
+    100% {
+        background: radial-gradient(circle, rgba(63,6,119,1) 0%, rgba(6,62,116,1) 100%, rgba(0,212,255,1) 100%);
+    }
+}
+
+
+.dot-edu {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1000px;
+    position: absolute;
+    box-shadow: 0 0 15px 0 rgb(255, 255, 255);
+    animation: dot-edu 1s linear 1s infinite alternate;
+}
+
+.dot-edu-1 {
+    top: 2rem;
+    left: 24.5rem;
+}
+
+.dot-edu-2 {
+    top: 7.5rem;
+    left: 24.5rem;
+}
+
+.dot-edu-3 {
+    top: 12.5rem;
+    left: 24.5rem;
+}
+
+.header-deu h1 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    animation: edu 5s linear 2s infinite alternate;
+    text-shadow: 2px 2px 10px white;
+}
+
+.header-deu {
+    margin: 0 9rem;
+}
+
+@keyframes dot-edu {
+    0% {
+        transform: scale(1.1);
+    }
+    25% {
+        transform: scaleX(1.1);
+    }
+    50% {
+        transform: scaleY(1.1);
+    }
+    75% {
+        transform: scaleX(1.1);
+    }
+    100% {
+        border-radius: 10000px 10000px 10000px 9000px
+    }
+}
+
+@keyframes edu {
+    0% {
+        transform: rotate(1deg);
+    }
+    50% {
+        transform: rotate(-5deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(12,6,119,1) 0%, rgba(61,6,116,1) 100%, rgba(0,212,255,1) 100%);
+    color: white;
+}
